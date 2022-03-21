@@ -1,0 +1,67 @@
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+$primary: hsl(232, 13%, 33%);
+$info: hsl(237, 63%, 64%);
+$success: hsl(234, 14%, 74%);
+
+.bg-custom
+{
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.bg-custom2
+{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.bg-icons
+{
+    background: url(/images/bg-bottom.svg)no-repeat bottom left, url(/images/bg-top.svg)no-repeat right top -100px;
+}
+
+.custom-control
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.custom-control-input
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-control-label
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 34px;
+    transition: .4s;
+
+    &::before
+    {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        right: 4px;
+        bottom: 4px;
+        background: white;
+        border-radius: 34px;
+        transition: .4s;
+    }
+}
+
+.custom-control-input:checked + .custom-control-label::before
+{
+  transform: translateX(-26px);
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

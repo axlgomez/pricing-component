@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Pricing Component</title>
+</head>
+
+<body class="bg-light bg-icons">
+    <div class="container py-3">
+
+        <header>    
+            <div class="pricing-header p-4 pb-md-4 mx-auto text-center">
+            <h2 class="fw-normal text-secondary">Our Pricing</h2>
+            <div class="container flex-column flex-sm-row d-flex justify-content-center align-items-center text-success">
+                <div class="mt-4 mt-sm-0 me-sm-4">Annually</div>
+                <div class="custom-control custom-switch my-4">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1"></label>
+                </div>
+                <div class="mb-3 mb-sm-0 ms-sm-4">Monthly</div>
+            </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                
+            <div class="col">
+                <div class="card mb-4 rounded-3 bg-white border-0 text-secondary shadow p-3 mb-5">
+                <div class="pt-4 pb-0">
+                    <h6 class="my-0 fw-normal fs-5">Basic</h6>
+                </div>
+                <div class="card-body">
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <small class="fw-bold fs-2 mx-2 text-primary">$</small>
+                        <h1 class="card-title pricing-card-title fw-bold display-3 text-primary" id="price-basic">19.99</h1>
+                    </div>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li class="border-top p-3">500 GB Storage</li>
+                    <li class="border-top p-3">2 Users Allowed</li>
+                    <li class="border-top border-bottom p-3">Send up to 3 GB</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-transparent text-white bg-custom fs-6 text-uppercase btn-hover"><small>Learn More</small></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card mb-4 rounded-3 bg-custom2 border-0 text-secondary shadow p-3 mb-5 text-white">
+                <div class="pt-4 pb-0">
+                    <h6 class="my-0 fw-normal fs-5">Professional</h6>
+                </div>
+                <div class="card-body">
+                    <div class="container d-flex align-items-center">
+                        <small class="fw-bold fs-2 mx-2">$</small>
+                        <h1 class="card-title pricing-card-title fw-bold display-3" id="price-professional">24.99</h1>
+                    </div>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li class="border-top p-3">1 TB Storage</li>
+                    <li class="border-top p-3">5 Users Allowed</li>
+                    <li class="border-top border-bottom p-3">Send up to 10 GB</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-transparent text-info bg-white fs-6 text-uppercase"><small>Learn More</small></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card mb-4 rounded-3 bg-white border-0 text-secondary shadow p-3 mb-5">
+                <div class="pt-4 pb-0">
+                    <h6 class="my-0 fw-normal fs-5">Master</h6>
+                </div>
+                <div class="card-body">
+                    <div class="container d-flex align-items-center">
+                        <small class="fw-bold fs-2 mx-2 text-primary">$</small>
+                        <h1 class="card-title pricing-card-title fw-bold display-3 text-primary" id="price-master">39.99</h1>
+                    </div>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li class="border-top p-3">2 TB Storage</li>
+                    <li class="border-top p-3">10 Users Allowed</li>
+                    <li class="border-top border-bottom p-3">Send up to 20 GB</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-transparent text-white bg-custom fs-6 text-uppercase"><small>Learn More</small></button>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
